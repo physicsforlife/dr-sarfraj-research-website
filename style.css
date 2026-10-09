@@ -1,0 +1,88 @@
+:root{--navy:#082d49;--blue:#0a78a8;--cyan:#1eb4ca;--ink:#183b55;--muted:#667f91;--line:#dbe8ef;--soft:#f5fafc;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:#fff;line-height:1.7}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(219,232,239,.8)}.nav-wrap{width:min(1180px,94%);margin:auto;display:flex;align-items:center;justify-content:space-between;min-height:76px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:20px}.brand strong{display:block;font-family:"Libre Baskerville";font-size:14px}.brand small{display:block;color:#7b91a0;font-size:10px;letter-spacing:1.3px;text-transform:uppercase}.nav{display:flex;gap:21px;align-items:center}.nav a{font-size:11px;color:#587082;font-weight:600}.nav a:hover,.nav a.active{color:var(--blue)}.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--navy)}.hero{background:linear-gradient(115deg,#062c48 0%,#0a4263 56%,#0a5b78 100%);color:#fff;position:relative;overflow:hidden}.hero-glow{position:absolute;width:550px;height:550px;border-radius:50%;right:-160px;top:-220px;background:radial-gradient(circle,rgba(30,180,202,.28),transparent 65%)}.hero-inner{width:min(1180px,94%);margin:auto;min-height:590px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}.eyebrow{font-size:10px;letter-spacing:2.4px;color:#9ddbe5;font-weight:700}.hero h1{font-family:"Libre Baskerville";font-size:clamp(36px,5vw,63px);line-height:1.13;margin:15px 0 12px;letter-spacing:-2px}.hero h2{font-size:20px;font-weight:500;margin:0;color:#d8edf3}.hero h2 span{color:var(--cyan)}.institution{font-size:14px;color:#bcd2de;margin:20px 0}.recognition{display:flex;flex-wrap:wrap;gap:12px;align-items:center;color:#d8eef2;font-size:11px}.recognition span:first-child{color:#fff;font-weight:700}.recognition i{height:4px;width:4px;background:#48bfd0;border-radius:50%}.hero-text{max-width:670px;color:#a9c2cf;font-size:14px;margin:24px 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;gap:14px;align-items:center;padding:11px 17px;border-radius:4px;font-size:11px;font-weight:700}.btn.primary{background:#19b3ca;color:#fff}.btn.secondary{border:1px solid #5f91a8;color:#e4f2f5}.hero-photo{position:relative;display:flex;justify-content:center}.hero-photo>img{width:min(390px,100%);height:455px;object-fit:cover;border-radius:5px;filter:saturate(.9);box-shadow:0 25px 70px rgba(0,0,0,.25)}.photo-card{position:absolute;bottom:-20px;left:10px;background:#fff;color:var(--ink);padding:14px 17px;border-left:4px solid var(--cyan);box-shadow:0 12px 35px rgba(0,0,0,.18);font-size:11px}.photo-card b{display:block;color:var(--blue);font-size:10px;letter-spacing:1.5px;text-transform:uppercase}.photo-card span{display:block;line-height:1.45}.section{padding:78px 0}.section-heading{display:flex;align-items:center;gap:15px;margin-bottom:25px}.section-heading span{font-size:10px;letter-spacing:2.4px;text-transform:uppercase;font-weight:700;color:var(--blue)}.section-heading em{height:1px;width:48px;background:#7bcddd}.research-strip{padding:55px 0;background:#f7fbfd}.research-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.research-grid article{background:#fff;border:1px solid var(--line);padding:19px 15px;min-height:190px;transition:.25s}.research-grid article:hover{transform:translateY(-4px);box-shadow:0 15px 30px rgba(13,66,94,.08)}.research-grid article>div{color:#86a5b5;font-size:10px;font-weight:700;letter-spacing:1px}.research-grid h3{font-family:"Libre Baskerville";font-size:14px;line-height:1.45;margin:18px 0 8px;color:#214b69}.research-grid p{font-size:11px;color:var(--muted);line-height:1.55}.publications{background:#fff}.pub-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pub-list article{display:grid;grid-template-columns:58px 1fr;gap:16px;border:1px solid var(--line);padding:20px;background:#fff;border-radius:4px}.pub-list article:hover{box-shadow:0 12px 28px rgba(13,66,94,.07);transform:translateY(-2px);transition:.2s}.pub-year{font-size:10px;color:var(--blue);font-weight:700;letter-spacing:1px;padding-top:3px}.pub-list h3{font-family:"Libre Baskerville";font-size:14px;line-height:1.5;color:#214b69;margin:0 0 7px}.pub-list p{font-size:11px;color:var(--muted);line-height:1.5;margin:3px 0}.pub-list .pub-authors{font-size:10px}.pub-list a{display:inline-block;margin-top:7px;color:var(--blue);font-size:10px;font-weight:700}.pub-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}.btn.outline{border:1px solid var(--line);color:var(--blue);background:#fff}.btn.outline:hover{border-color:#9bcbd6}
+.glance{padding:26px 0;background:#fff}.glance-box{border:1px solid var(--line);padding:25px 30px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.stats div{border-right:1px solid var(--line)}.stats div:last-child{border:0}.stats strong{display:block;font-family:"Libre Baskerville";font-size:29px;color:var(--navy)}.stats span{display:block;font-size:11px;font-weight:700}.stats small{color:#8a9eaa;font-size:10px}.two-col{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.about{background:#fff}.about p{color:var(--muted);font-size:14px}.about .lead{font-family:"Libre Baskerville";font-size:19px;line-height:1.65;color:#31566f}.about-photo img{width:100%;height:400px;object-fit:cover}.photo-caption{font-size:10px;color:#78909f;padding:8px 0;border-bottom:1px solid var(--line)}.career{background:var(--soft)}.timeline{max-width:920px}.timeline article{display:grid;grid-template-columns:130px 1fr;gap:28px;border-bottom:1px solid var(--line);padding:19px 0}.timeline article:last-child{border:0}.year{font-size:11px;color:var(--blue);font-weight:700}.timeline h3{font-family:"Libre Baskerville";font-size:15px;margin:0 0 3px}.timeline p{font-size:12px;color:var(--muted);margin:0}.section-intro{font-size:13px;color:var(--muted);margin-top:-10px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:5px}.table-wrap table{border-collapse:collapse;width:100%;min-width:820px}.table-wrap th{background:var(--navy);color:#fff;text-align:left;padding:14px;font-size:10px;text-transform:uppercase;letter-spacing:1px}.table-wrap td{padding:14px;border-bottom:1px solid var(--line);font-size:12px;color:#5e7585;vertical-align:top}.table-wrap tr:last-child td{border:0}.table-wrap tr:hover td{background:#f8fcfd}.patents{background:#f7fbfd}.patent-grid,.book-grid,.award-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.patent-grid article,.book-grid article,.award-grid article{background:#fff;border:1px solid var(--line);padding:20px;border-radius:4px}.patent-grid span,.book-grid span,.award-grid b{font-size:9px;letter-spacing:1.4px;color:var(--blue);font-weight:700}.patent-grid h3,.book-grid h3,.award-grid h3{font-family:"Libre Baskerville";font-size:14px;line-height:1.55;margin:8px 0}.patent-grid p,.book-grid p,.award-grid p{font-size:11px;color:var(--muted);margin:0}.books{background:#fff}.awards{background:#f7fbfd}.cta{background:var(--navy);color:#fff;padding:38px 0}.cta .container{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta span{font-size:9px;letter-spacing:2px;color:#8ecbd6}.cta h2{font-family:"Libre Baskerville";margin:5px 0;font-size:25px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.contact h2{font-family:"Libre Baskerville"}.contact p{font-size:13px;color:var(--muted)}.director{color:#315b75!important;font-weight:600}.contact-links{display:flex;flex-direction:column;gap:15px;padding-top:30px}.contact-links a{font-family:"Libre Baskerville";font-size:17px;color:var(--blue)}.contact-links p{font-size:11px}.contact{background:#fff}footer{border-top:1px solid var(--line);padding:20px 0;color:#8297a5;font-size:10px}footer .container{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:950px){.nav{gap:12px}.pub-list{grid-template-columns:1fr}.research-grid{grid-template-columns:repeat(3,1fr)}.hero-inner{grid-template-columns:1fr 360px}.hero-photo>img{height:420px}.patent-grid,.book-grid,.award-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:15px 4%;flex-direction:column;align-items:flex-start}.nav.open{display:flex}.menu-toggle{display:block}.hero-inner,.two-col,.contact-grid{grid-template-columns:1fr}.hero-inner{padding:65px 0 85px}.hero-photo{order:-1;justify-content:flex-start}.hero-photo>img{width:260px;height:320px}.photo-card{left:145px}.research-grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2){border:0}.patent-grid,.book-grid,.award-grid{grid-template-columns:1fr}.timeline article{grid-template-columns:1fr;gap:3px}.cta .container,footer .container{flex-direction:column;align-items:flex-start}.section{padding:60px 0}.glance-box{padding:22px 18px}}
+.profile-highlights{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.profile-highlights>div{padding:16px 18px;border:1px solid rgba(22,70,82,.12);border-radius:14px;background:rgba(255,255,255,.58)}
+.profile-highlights span{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#668087;margin-bottom:7px}
+.profile-highlights b{display:block;font-size:.92rem;line-height:1.45;color:#18353d}
+.profile-note{background:#f5f8f7}
+.profile-note-box{display:grid;grid-template-columns:1.5fr 1fr;gap:45px;align-items:center;padding:55px 0}
+.profile-note-box>div:first-child>span{font-size:.75rem;letter-spacing:.14em;color:#5d7b82;font-weight:700}
+.profile-note-box h2{font-family:'Libre Baskerville',serif;font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.25;margin:12px 0 16px;color:#173943}
+.profile-note-box p{max-width:720px;color:#506970;line-height:1.8}
+.profile-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.profile-tags span{padding:10px 14px;border-radius:999px;background:#fff;border:1px solid rgba(22,70,82,.14);color:#2d5c65;font-size:.86rem}
+@media(max-width:800px){.profile-highlights{grid-template-columns:1fr}.profile-note-box{grid-template-columns:1fr;gap:25px}.profile-tags{justify-content:flex-start}}
+
+/* Publication library */
+.pub-summary{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0 18px}
+.pub-summary>div{padding:18px 20px;background:linear-gradient(135deg,#f7fbfc,#fff);border:1px solid var(--line);border-radius:8px}
+.pub-summary strong{display:block;color:var(--navy);font-size:14px;margin-bottom:5px}
+.pub-summary span{font-size:11px;color:var(--muted)}
+.pub-filters{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
+.pub-filter{appearance:none;border:1px solid var(--line);background:#fff;color:var(--navy);padding:8px 13px;border-radius:999px;font:600 11px var(--sans);cursor:pointer;transition:.2s ease}
+.pub-filter:hover,.pub-filter.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.pub-list{display:grid;gap:12px}
+.pub-card{display:grid;grid-template-columns:72px 1fr;gap:18px;padding:19px 20px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 20px rgba(13,66,94,.035);align-items:start}
+.pub-card[style*="display: none"]{display:none!important}
+.pub-year{font:700 18px var(--serif);color:var(--teal);padding-top:2px}
+.pub-body h3{font:700 15px/1.45 var(--serif);color:var(--navy);margin:0 0 7px}
+.pub-journal{font-size:12px;color:var(--ink);margin:0 0 7px}
+.pub-journal b{font-weight:700}
+.pub-authors{font-size:11px;line-height:1.55;color:var(--muted);margin:0 0 8px}
+.pub-link{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.5px;color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(20,124,133,.3);padding-bottom:2px}
+.pub-link:hover{color:var(--navy)}
+.publication-note{margin-top:18px;font-size:10px;line-height:1.6;color:var(--muted)}
+@media(max-width:760px){.pub-summary{grid-template-columns:1fr}.pub-card{grid-template-columns:1fr;gap:5px;padding:16px}.pub-year{font-size:14px}.pub-body h3{font-size:14px}}
+
+/* Final responsive image and layout refinements */
+.hero-photo>img{display:block;object-position:center 24%;}
+.about-photo img{display:block;border-radius:5px;object-position:center 35%;}
+.hero-copy,.hero-photo,.about-photo{min-width:0;}
+img{max-width:100%;}
+@media(max-width:950px){
+  .hero-inner{gap:32px;}
+  .hero-photo>img{width:100%;max-width:360px;height:420px;}
+  .two-col{gap:38px;}
+  .about-photo img{height:clamp(280px,42vw,380px);}
+}
+@media(max-width:760px){
+  .nav-wrap{min-height:68px;}
+  .brand strong{font-size:12px;}
+  .brand small{font-size:9px;letter-spacing:.9px;}
+  .nav{top:68px;max-height:calc(100vh - 68px);overflow-y:auto;}
+  .hero-inner{min-height:0;padding:38px 0 72px;gap:34px;}
+  .hero-photo{order:-1;justify-content:center;width:100%;}
+  .hero-photo>img{width:min(270px,78vw);height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 22%;}
+  .photo-card{left:calc(50% + 5px);bottom:-20px;max-width:calc(50% - 8px);padding:11px 12px;}
+  .photo-card span{font-size:10px;}
+  .hero h1{font-size:clamp(34px,9vw,48px);letter-spacing:-1.2px;overflow-wrap:anywhere;}
+  .hero h2{font-size:17px;}
+  .hero-text{font-size:13px;}
+  .hero-actions{gap:9px;}
+  .btn{max-width:100%;}
+  .two-col{gap:26px;}
+  .about-photo img{height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 35%;}
+  .research-grid{gap:9px;}
+  .research-grid article{padding:15px 12px;min-height:0;}
+  .research-grid h3{font-size:13px;margin:12px 0 6px;}
+  .research-grid p{font-size:11px;}
+  .stats{gap:14px;}
+  .stats strong{font-size:24px;}
+  .pub-filters{gap:6px;}
+  .pub-filter{padding:7px 10px;}
+  .table-wrap{max-width:100%;}
+  .contact-grid{gap:25px;}
+}
+@media(max-width:420px){
+  .container{width:90%;}
+  .nav-wrap{width:90%;}
+  .hero-inner{width:90%;}
+  .hero-photo>img{width:min(245px,76vw);}
+  .photo-card{left:calc(50% + 2px);max-width:calc(50% - 4px);font-size:10px;}
+  .recognition{gap:8px;font-size:10px;}
+  .research-grid{grid-template-columns:1fr 1fr;}
+  .profile-highlights{grid-template-columns:1fr;}
+  .glance-box{padding:18px 14px;}
+}

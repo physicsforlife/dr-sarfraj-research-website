@@ -4,8 +4,11 @@ const links = [...document.querySelectorAll('.nav a')];
 const sections = [...document.querySelectorAll('main section[id]')];
 
 function showTab(id) {
+  const target = sections.find(section => section.id === id);
+  if (!target) return;
+
   sections.forEach(section => {
-    section.hidden = section.id !== id;
+    section.hidden = section !== target;
   });
 
   links.forEach(link => {
@@ -16,7 +19,7 @@ function showTab(id) {
   });
 
   if (nav) nav.classList.remove('open');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: 'auto' });
 }
 
 links.forEach(link => {
@@ -30,9 +33,19 @@ links.forEach(link => {
   });
 });
 
+const brand = document.querySelector('.brand');
+if (brand) {
+  brand.addEventListener('click', event => {
+    event.preventDefault();
+    showTab('home');
+    history.replaceState(null, '', '#home');
+  });
+}
+
 if (toggle && nav) {
   toggle.addEventListener('click', () => nav.classList.toggle('open'));
 }
 
 const initialId = window.location.hash.slice(1);
 showTab(sections.some(section => section.id === initialId) ? initialId : 'home');
+    

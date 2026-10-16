@@ -86,14 +86,13 @@ img{max-width:100%;}
   .profile-highlights{grid-template-columns:1fr;}
   .glance-box{padding:18px 14px;}
 } 
-/* Tabbed content layout */
+/* Tab navigation */
 main > section[hidden] {
   display: none !important;
 }
 
 main > section:not([hidden]) {
-  display: block;
-  animation: tabFadeIn 0.25s ease;
+  animation: tabFadeIn .22s ease;
 }
 
 @keyframes tabFadeIn {
@@ -107,3 +106,18 @@ main > section:not([hidden]) {
   }
 }
 
+/* Keep the professor's name on one line on desktop */
+@media (min-width: 761px) {
+  .hero h1 {
+    white-space: nowrap;
+    font-size: clamp(32px, 4.4vw, 54px);
+    letter-spacing: -1.5px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero h1 {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}

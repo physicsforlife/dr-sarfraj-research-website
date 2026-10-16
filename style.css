@@ -85,4 +85,25 @@ img{max-width:100%;}
   .research-grid{grid-template-columns:1fr 1fr;}
   .profile-highlights{grid-template-columns:1fr;}
   .glance-box{padding:18px 14px;}
+} 
+/* Tabbed content layout */
+main > section[hidden] {
+  display: none !important;
 }
+
+main > section:not([hidden]) {
+  display: block;
+  animation: tabFadeIn 0.25s ease;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

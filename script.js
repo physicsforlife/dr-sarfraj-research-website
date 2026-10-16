@@ -1,19 +1,25 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const links = [...document.querySelectorAll('.nav a')];
-const sections = [...document.querySelectorAll('main section[id]')];
+const panels = [...document.querySelectorAll('main > section[id]')];
+const homeExtras = [...document.querySelectorAll('main > section:not([id])')];
 
 function showTab(id) {
-  const target = sections.find(section => section.id === id);
+  const target = panels.find(panel => panel.id === id);
   if (!target) return;
 
-  sections.forEach(section => {
-    section.hidden = section !== target;
+  panels.forEach(panel => {
+    panel.hidden = panel !== target;
+  });
+
+  homeExtras.forEach(panel => {
+    panel.hidden = id !== 'home';
   });
 
   links.forEach(link => {
     const active = link.getAttribute('href') === '#' + id;
     link.classList.toggle('active', active);
+
     if (active) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
   });
@@ -25,7 +31,8 @@ function showTab(id) {
 links.forEach(link => {
   link.addEventListener('click', event => {
     const id = link.getAttribute('href').slice(1);
-    if (sections.some(section => section.id === id)) {
+
+    if (panels.some(panel => panel.id === id)) {
       event.preventDefault();
       showTab(id);
       history.replaceState(null, '', '#' + id);
@@ -43,9 +50,10 @@ if (brand) {
 }
 
 if (toggle && nav) {
-  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
 }
 
 const initialId = window.location.hash.slice(1);
-showTab(sections.some(section => section.id === initialId) ? initialId : 'home');
-    
+showTab(panels.some(panel => panel.id === initialId) ? initialId : 'home');
